@@ -1,11 +1,10 @@
-import 'dart:ui';
-
+// import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:bubble_bottom_bar/bubble_bottom_bar.dart';
 import 'package:botton_navigation_bar/setting.dart';
-import 'package:botton_navigation_bar/target_page.dart';
-import 'package:botton_navigation_bar/target_page copy 2.dart';
-import 'package:botton_navigation_bar/target_page copy 3.dart';
+import 'package:botton_navigation_bar/fake_timeline.dart';
+import 'package:botton_navigation_bar/fake_search.dart';
+import 'package:botton_navigation_bar/fake_profile.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -13,20 +12,20 @@ void main() {
   ));
 }
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key}) : super(key: key);
+class BottomBar extends StatefulWidget {
+  BottomBar({Key key}) : super(key: key);
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _BottomBar createState() => _BottomBar();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _BottomBar extends State<BottomBar> {
   int _currentIndex = 0;
 
   List _pageList = [
-    TargetPage(),
-    TargetPage3(),
-    TargetPage4(),
-    Setup_page(),
+    TargetPage(), //class name of timeline
+    TargetPage3(), //class name of search
+    TargetPage4(), //class name of profile
+    Setup_page(), //class name of setting
   ];
 
   @override
@@ -52,7 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
         // onTap: changePage,
 
         onTap: (int index) {
-//              this._currentIndex=index;//不会重新渲染
+             // this._currentIndex=index; //won't rerender
           setState(() {
             this._currentIndex = index;
           });

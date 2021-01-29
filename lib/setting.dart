@@ -1,6 +1,6 @@
-import 'package:botton_navigation_bar/target_page.dart';
+import 'package:botton_navigation_bar/fake_timeline.dart';
 import 'package:flutter/material.dart';
-import 'package:botton_navigation_bar/target_page copy.dart';
+import 'package:botton_navigation_bar/bottombar.dart';
 
 class Setup_page extends StatelessWidget {
   final _bottomNavigationColor = Colors.blue;
