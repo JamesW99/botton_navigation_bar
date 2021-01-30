@@ -1,7 +1,7 @@
 # botton_navigation_bar
 
 A new Flutter application.
-
+![image](https://github.com/JamesW99/botton_navigation_bar/blob/master/Screenshot_20210130-012125.png)
 ## Getting Started
 
 This project is a starting point for a Flutter application.
