@@ -34,7 +34,7 @@ class _BottomBar extends State<BottomBar> {
       body: this._pageList[this._currentIndex],
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        child: Icon(Icons.camera),
+        child: Icon(Icons.camera_alt_outlined),
         backgroundColor: Colors.blue,
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
